@@ -6,8 +6,9 @@ public class CreditCard{
   .
   .
   */
+  @override
   public void Pay(String paymentType){
-  Payment payment = PaymentProvider.getPayment(paymentType);
+  Payment payment =         PaymentProvider.getPayment(paymentType);
     payment.pay();
   }
 
